@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent{
+    padding:15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E3A5F;
+    height: 50px;
+    color: white;
+}
+.parent ul{
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+.parent a{
+    color: white;
+    text-decoration: none;
+}
+.parent a,button:hover{
+    transition: 0.3s;
+}
+.parent a:hover{
+    color: #ff8a00;
+}
+.parent button{
+    padding: 10px;
+    background-color: #ff8a00;
+    color: white;
+    border-radius: 5px;
+}
+.parent button:hover{
+    border: none;
+    cursor: pointer;
+    
+}
+.hero-section{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.child1 button{
+    background-color: #ff8a00;
+    padding: 10px;
+}
+.child1 button:hover{
+    background-color: aqua;
+}
+
+.hero-section {
+    background: linear-gradient(to right, rgb(80, 80, 182) );
+    padding: 20px;
+    color: white;
+}
+img{
+    flex: 1 1 300px;
+    height: 300px;
+    width: 400px;
+}
+image{
+    width: 100%;
+}
+
+.title h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;  
+    flex-wrap: wrap;
+   
+}
+.item{
+    text-align: center;
+    transition: transform 0.3s;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px gray;
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    padding: 15px;
+    height: 200px;
+}
+.item h2{
+    color:#1E3A5F;
+    
+}
+.learn{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: #1E3A5F;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.item:hover{
+    transform: translateY(-8px);
+}
+
+section h1{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px    ;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    grid-auto-rows: minmax(180px, 220px);
+}
+
+.gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px
+}
+.gallery #image{
+    grid-column: 1/3;
+}
+
+.hero-section .child1{
+    animation-name: square;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+}
+.hero-section img{
+    animation-name: alexandria;
+    animation-duration: 1s;
+    animation-delay: 0.3s
+}
+
+@keyframes square{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes alexandria{
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.gallery{
+    overflow: hidden;
+}
+.gallery .images{
+    transition: 0.5s;
+    
+}
+
+.gallery .images:hover{
+    transform: scale(1.05);
+}
+
+/* @media  {
+    
+} */
